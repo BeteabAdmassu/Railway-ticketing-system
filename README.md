@@ -16,11 +16,7 @@ The current railway ticketing system is a paper-based ticketing system in which 
 
    - Increased Customer Satisfaction: With the digital ticketing system, customers have easier access to tickets and rail services with just a few clicks on their computer or smartphone's screen. This increased convenience leads to higher customer satisfaction. 
 
-   - Increased Efficiency: By leveraging technology such as AI, machine learning, and predictive analytics, the railway ticketing system helps automate many of the mundane tasks related to ticket bookings so that less manpower is required to accomplish them. This leads to more efficient operations and higher levels of customer service overall. 
-
    - Automation of Services: Railway ticketing systems allow information regarding prices, routes, timetables, etc., available at all times so that customers can make informed decisions while booking tickets without relying on human interaction in-person or over telephone lines – reducing costs associated with manual labor as well as leading to faster turnaround times in terms of processing transactions. 
-
-   - Enhanced Tracking System: Keeping track of last minute seat changes become a much simpler process when automated through digital systems like this due to bigger data stores than would be contains in physical records - allowing operators to quickly identify patterns or clusters regarding certain customer preferences (such as looking for travel deals on particular time frames compared to others).
 
 ### Some Disadvantages include 
   
