@@ -117,7 +117,7 @@ Logical database design for a railway ticketing system involves the implementati
 
 
       3.1.2	Physical database design
-Physical database design for railway ticketing system involves the implementation of the data model that was developed during the conceptual design phase [1]. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The physical database design is also responsible for the optimization of the database for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
+Physical database design for railway ticketing system involves the implementation of the data model that was developed during the conceptual design. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The physical database design is also responsible for the optimization of the database for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
       
 ```sql
 CREATE TABLE TRIP (
