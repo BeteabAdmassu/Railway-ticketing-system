@@ -84,7 +84,26 @@ This is the Zero Level DFD of Railway Reservation System, where we have eloborat
   
   ![](img/Second-level.png)
   
-      2.3.2	Logic Modeling (using either of the three logic modeling methods)
+      2.3.2	Logic Modeling 
+```
+Receive trip order
+if trip is valid:
+	fetch the trip from database:
+		if trip exists in database:
+			make api request to payment service provider
+			if the payment is successful:
+				generate transaction
+				generate ticket and receipt
+				update the number-of-passengers and other trip info
+				write the trip-info to the database
+			else
+				give the message to the user
+		else
+			give the message to the user
+else
+	give the the message to the user
+```
+
       2.3.3	Conceptual Data Modeling using ER Model
         2.3.3.1	Entity Types, Attributes and Relationships of the System
         2.3.3.2	ER Diagram
@@ -94,7 +113,13 @@ The ER diagram of a railway ticketing system typically contains entities such as
         
 ## 3	System Design
     3.1	Database design
+Database design for railway ticketing system involves the implementation of the data model that was developed during the conceptual design phase. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The database design should also ensure that the data is secure and accessible by authorized personnel only. Additionally, it should also be optimized for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
+
       3.1.1	Logical database design
+Logical database design for a railway ticketing system involves the implementation of the data model that was developed during the conceptual design phase. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The logical database design should also ensure that the data is secure and accessible by authorized personnel only. Additionally, it should also be optimized for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
+ 
+
+
       3.1.2	Physical database design
 Physical database design for railway ticketing system involves the implementation of the data model that was developed during the conceptual design phase [1]. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The physical database design is also responsible for the optimization of the database for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
       
@@ -136,8 +161,21 @@ CREATE TABLE TRANSACTION (
 
 ## 4	System implementation (Since developing the system is not a requirement for this project, here you’re expected to simply describe the plan of how the activities in this phase are going to be undertaken)
     4.1	Application development
+The development of this system requires building two different applications. The first application is for clients to use the system and book a trip. The second application is for admins and management.
+The development methodology that we’re going to follow is agile scrum methodology. 
+According to scrum methodology we’ll break the application down into smaller manageable components and use an iterative process to develop each components.
+When developing this program, we’ll divide it into different parts. This will allow us to use different programming languages and tools which are the best for the given task.
+The client side of the application development is designed to be a mobile application. involves developing the front-end and backend-part. The front-end part can be done by scripting languages and communicates with the front-end using API calls. Since the backend-part part involves a lot of interactions with other systems it needs to be written using a high-performance programming language. So, it’s implemented using a compiled programming language.
+The other application is the managing application. Since this application is a desktop application and also needs fast interactions with the backend system it’s written in a language similar to the backend part.
+
     4.2	Testing
+When developing this system testing is given huge attention.
+Several integration tests are written for front-end parts of both systems. Unit tests are written for both the front-end and back-end parts. In addition to the two tests Security, Stress and Other tests are written for the backend part.
+
     4.3	Installation
+The client-side application will be published on different mobile application stores. The clients can then directly install the application on their phones.
+The other application will require a more careful attention. It’ll be installed by a person with the necessary knowledge. The system. will directly be installed for the first time. And, subsequent installations will be done in parallel to the previous system.
+
 ## 5	[System support and maintenance] (The same approach is followed as in System Implementation)
     5.1	System support
     5.2	Maintenance
