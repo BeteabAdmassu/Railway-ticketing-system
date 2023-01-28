@@ -90,7 +90,7 @@ This is the Zero Level DFD of Railway Reservation System, where we have eloborat
         2.3.3.2	ER Diagram
 The ER diagram of a railway ticketing system typically contains entities such as PAXinfo, Logincredentials, Ticketdetails and Traindetails, among others. The entities are linked to one another through relationships such as one-to-one, one-to-many, and many-to-many. The one-to-one relationship is used to link a passenger to their login credentials, while the one-to-many relationship is used to link a passenger to their tickets. The many-to-many relationship is used to link different tickets to different trains. The diagram also contains attributes such as ticketid, trainid, departuretime, and arrivaltime, among others.
 
-        ![](img/er-diagram.jpg)
+        ![](img/er_diagram.jpg)
         
 ## 3	System Design
     3.1	Database design
