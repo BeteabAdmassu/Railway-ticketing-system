@@ -96,6 +96,39 @@ The ER diagram of a railway ticketing system typically contains entities such as
     3.1	Database design
       3.1.1	Logical database design
       3.1.2	Physical database design
+Physical database design for railway ticketing system involves the implementation of the data model that was developed during the conceptual design phase [1]. This is done by creating the database structure, specifying the data types and sizes, setting up indexes and other constraints, and creating relationships between the entities. The physical database design is also responsible for the optimization of the database for better performance and scalability. This can include the use of partitioning and replication technologies, as well as the implementation of monitoring and backup processes.
+      
+       ```sql
+CREATE TABLE TRIP (
+    TRIP_ID INT NOT NULL,
+    START VARCHAR(50) NOT NULL,
+    DESTINATION VARCHAR(50) NOT NULL,
+    DISTANCE INT NOT NULL,
+    PRICE INT NOT NULL,
+    NUMBER_PF_PASSENGERS INT NOT NULL,
+    DEPARTURE_TIME TIME NOT NULL,
+    ADMIN VARCHAR(50) NOT NULL,
+    PRIMARY KEY (TRIP_ID),
+    FOREIGN KEY (ADMIN) REFERENCES ADMIN(ADMIN_ID)
+);
+
+CREATE TABLE ADMIN (
+    ADMIN_ID VARCHAR(50) NOT NULL,
+    NAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    PHONE_NUM VARCHAR(50) NOT NULL,
+    PRIMARY KEY (ADMIN_ID)
+);
+
+CREATE TABLE TRANSACTION (
+    TRANSACTION_ID INT NOT NULL,
+    TRIP_ID INT NOT NULL,
+    TIME TIME NOT NULL,
+    PAYMENT_PROVIDER VARCHAR(50) NOT NULL,
+    PRIMARY KEY (TRANSACTION_ID),
+    FOREIGN KEY (TRIP_ID) REFERENCES TRIP(TRIP_ID)
+);
+       ```
     3.2	Interface design
       3.2.1	Forms and reports Design
       3.2.2	Dialogue Design
