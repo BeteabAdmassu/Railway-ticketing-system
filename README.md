@@ -170,11 +170,11 @@ When designing an interface for a railway ticketing system, it is important to c
       
 When designing forms and reports for a railway ticketing system, it is important to consider the user experience of customers. Forms should be easy to use and should provide helpful feedback to the user when necessary. Reports should be designed to be visually appealing, organized in a way that makes it easy to interpret the data, and should provide useful information to the users. Additionally, the forms and reports should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms.
        
-       ![](img/one.jpg)
+   ![](img/one.jpg)
        
-       ![](img/two.jpg)
+   ![](img/two.jpg)
        
-       ![](img/three.jpg)
+   ![](img/three.jpg)
        
       3.2.2	Dialogue Design
 When designing a dialogue system for a railway ticketing system, the goal should be to create a conversational experience that is natural and easy to use. The system should be able to understand user input, provide relevant and contextual information about the train journeys, and guide users through the booking process. The dialogue should be designed to be accessible and inclusive for all users, regardless of age, gender, language, or ability. Additionally, the dialogue should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms. Finally, it should also be designed to provide helpful feedback to the user when necessary, and provide an easy way for users to change or cancel their bookings
