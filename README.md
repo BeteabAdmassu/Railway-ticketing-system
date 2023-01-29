@@ -48,10 +48,14 @@ Tool and Resource Requirements:
 - Software - Ticketing software will be required to collect customer information such as name, contact details etc., find out fare rates and routes based on user selection, create itineraries/schedules, manage bookings as well generate marketing reports after every transaction process. There should also adequate security measures built-in protect customer’s confidential details from malicious attacks or unintended exposure.  In addition , there might also need automated payment gateway integrations some form of loyalty program management tools (optional).
     
       1.8	Tasks (WBS) and Schedule 
+When creating tasks (WBS) and a schedule for a railway ticketing system, it is important to consider the scope of the project and the overall timeline. Tasks should be broken down into sub-tasks and organized into a project timeline. This timeline should include the expected start and end dates for each task and should be updated regularly as the project progresses. Additionally, it should also include any dependencies between tasks, and should take into account any additional resources needed to complete the tasks. Finally, the schedule should also be designed to provide a clear understanding of the progress of the project and should be used to track the progress of the tasks.
+
       1.9	Risk Management
 Railway ticketing systems can be managed in a number of ways to reduce the risk of fraud and abuse. One approach is to use a centralized system, in which tickets are issued and managed centrally. This approach can be more secure, as tickets cannot be easily counterfeit or stolen. Another approach is to use a distributed system, in which tickets are issued and managed by the individual stations along the railway network. This approach can be more flexible, as stations can vary in their ticketing policies and procedures. Finally, a hybrid system can be used, in which some elements of a centralized system are used, while other elements are implemented using a distributed system.
       
       1.10	Communication Plan
+When creating a communication plan for a railway ticketing system, it is important to consider how different stakeholders will be informed of changes, updates, and progress. This plan should include a timeline of when information should be shared and the methods of communication that will be used. Additionally, the plan should also include a system of feedback, so that stakeholders can provide their input and be kept up to date on the progress of the project. The communication plan should also ensure that all stakeholders are kept informed in a timely manner and that any issues that arise are quickly addressed.
+ 
   ## 2	System Analysis
 
       2.1	Requirements Determination
@@ -106,7 +110,11 @@ else
 ```
 
       2.2.3	Conceptual Data Modeling using ER Model
+When creating a conceptual data model for a railway ticketing system using an Entity-Relationship (ER) model, there are several entities that should be taken into account. These include passengers, tickets, trains, and stations. There should be relationships between these entities, such as a passenger-ticket relationship, a ticket-train relationship, and a train-station relationship. Additionally, other relationships may be included, such as a passenger-station relationship, depending on the required functionality of the system. Each entity should also have attributes associated with it, such as a passenger's name, a ticket's price, a train's type, and a station's location. These attributes should be carefully chosen to ensure that the model accurately reflects the data that needs to be captured and stored.
+
         2.2.3.1	Entity Types, Attributes and Relationships of the System
+The entity types, attributes, and relationships of a railway ticketing system would include entities such as passengers, tickets, trains, and stations, as well as attributes such as passenger name, ticket price, train type, and station location. Relationships between these entities would include a passenger-ticket relationship, a ticket-train relationship, and a train-station relationship. Additionally, there may be other relationships between entities, such as a passenger-station relationship, depending on the required functionality of the system.
+
         2.2.3.2	ER Diagram
 The ER diagram of a railway ticketing system typically contains entities such as Admin, Trip and Transaction, among others. The entities are linked to one another through relationships such as one-to-one, one-to-many, and many-to-many. The one-to-one relationship is used to link a passenger to their login credentials, while the one-to-many relationship is used to link a passenger to their tickets. The many-to-many relationship is used to link different tickets to different trains. 
 
@@ -162,11 +170,11 @@ When designing an interface for a railway ticketing system, it is important to c
       
 When designing forms and reports for a railway ticketing system, it is important to consider the user experience of customers. Forms should be easy to use and should provide helpful feedback to the user when necessary. Reports should be designed to be visually appealing, organized in a way that makes it easy to interpret the data, and should provide useful information to the users. Additionally, the forms and reports should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms.
        
-       ![](img/1.png)
+       ![](img/1.jpg)
        
-       ![](img/2.png)
+       ![](img/2.jpg)
        
-       ![](img/2.png)
+       ![](img/2.jpg)
        
       3.2.2	Dialogue Design
 When designing a dialogue system for a railway ticketing system, the goal should be to create a conversational experience that is natural and easy to use. The system should be able to understand user input, provide relevant and contextual information about the train journeys, and guide users through the booking process. The dialogue should be designed to be accessible and inclusive for all users, regardless of age, gender, language, or ability. Additionally, the dialogue should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms. Finally, it should also be designed to provide helpful feedback to the user when necessary, and provide an easy way for users to change or cancel their bookings
