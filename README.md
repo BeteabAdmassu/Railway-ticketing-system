@@ -66,11 +66,17 @@ The non-functional requirements of a Railway Reservation System include security
     2.3	Requirements Structuring
       2.3.1	Process modeling using DFD (describe your entire DFD, starting from Context Diagram all the way down to the Primitive DFD)
  ## Zero-Level diagram
-This is the Zero Level DFD of Railway Reservation System, where we have eloborated the high level process of Railway Reservation. It's a basic overview of the whole Railway Reservation System or process being analyzed or modeled. This diagram shows the interaction of the system with the customers and the admins. 
+This is the Zero Level DFD of Railway Reservation System, where we have eloborated the high level process of Railway Reservation. It's a basic overview of the whole Railway Reservation System or process being analyzed or modeled. This diagram shows the interaction of the system with the customers, the adminstrators and payment service providers
+
   ![](img/Zero-level.png)
   
  ## First-Level diagram
- First Level DFD of Railway Reservation System shows how the system is divided into sub-systems(processes), each of which deals with one or more of the data flows to or from an external agent, and which together provide all of the functionality of the Railway Reservation System system as a whole. It also identifies internal data stores of Payment, Customer, Train Route, Train Shedule, Ticket that must be present in order for the Railway Reservation system to do its job, and shows the flow of data between the various parts of Trains, Ticket, Customer, Payment, Train Route of the System. DFD Level 1 provides a more detailed breakout of pieces of the 1st level DFD
+ First Level DFD of Railway Reservation System shows how the system is divided into sub-systems(processes), each of which deals with one or more of the data flows to or from an external agent, and which together provide all of the functionality of the Railway Reservation System system as a whole. Here we break down the one large system at the level-0 diagram to 4 different components
+        
+	  1. Receive and process trip requests: This step entails getting the request from the customer, creating the ticket for the customer, and other related tasks.
+          2. processing transaction: This step entails managing payments and recording completed transactions on databases.
+          3. Generate a report: This entails generating a report for management.
+	  4. Generate/Edit Trip: This entails introducing new Trips to the System as well as having the ability to Edit Existing Trips.
  
   ![](img/First-level.png)
  
@@ -102,7 +108,7 @@ else
       2.3.3	Conceptual Data Modeling using ER Model
         2.3.3.1	Entity Types, Attributes and Relationships of the System
         2.3.3.2	ER Diagram
-The ER diagram of a railway ticketing system typically contains entities such as Admin, Trip and Transaction, among others. The entities are linked to one another through relationships such as one-to-one, one-to-many, and many-to-many. The one-to-one relationship is used to link a passenger to their login credentials, while the one-to-many relationship is used to link a passenger to their tickets. The many-to-many relationship is used to link different tickets to different trains. The diagram also contains attributes such as ticketid, trainid, departuretime, and arrivaltime, among others.
+The ER diagram of a railway ticketing system typically contains entities such as Admin, Trip and Transaction, among others. The entities are linked to one another through relationships such as one-to-one, one-to-many, and many-to-many. The one-to-one relationship is used to link a passenger to their login credentials, while the one-to-many relationship is used to link a passenger to their tickets. The many-to-many relationship is used to link different tickets to different trains. 
 
   ![](img/er_diagram.jpg)
         
@@ -150,11 +156,12 @@ CREATE TABLE TRANSACTION (
 );
 ```
     3.2	Interface design
+When designing an interface for a railway ticketing system, it is important to create a user-friendly experience for customers. Design elements should make it easy for customers to search for trains, view availability, and book tickets. The interface should include elements such as a search bar, a list of available trains, and an easy-to-use booking form. Additionally, the interface should be visually appealing and adhere to the principles of good design. The interface should be easy to navigate, with clear labels and buttons, and provide helpful feedback to the user when necessary. Finally, the interface should be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms.
       3.2.1	Forms and reports Design
       3.2.2	Dialogue Design
 
 
-## 4	System implementation (Since developing the system is not a requirement for this project, here you’re expected to simply describe the plan of how the activities in this phase are going to be undertaken)
+## 4	System implementation 
     4.1	Application development
 The development of this system requires building two different applications. The first application is for clients to use the system and book a trip. The second application is for admins and management.
 The development methodology that we’re going to follow is agile scrum methodology. 
