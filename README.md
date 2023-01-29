@@ -53,18 +53,18 @@ Railway ticketing systems can be managed in a number of ways to reduce the risk 
       
       1.10	Communication Plan
   ## 2	System Analysis
-      2.1	[Detail overview of the existing system] 
-      2.2	Requirements Determination
+
+      2.1	Requirements Determination
 The requirement determination process for Railway Reservation System involves collecting information from different sources to determine the functional and non-functional requirements of the system. Sources of information relevant to the system include customer feedback, interviews with stakeholders, existing documentation, industry standards, and market research. Additionally, the requirements can also be determined based on the data requirements of the organization and the business objectives.
 
-      2.2.1	Functional requirements 
+      2.1.1	Functional requirements 
 The functional requirements of a Railway Reservation System include the ability to book tickets, save transactions, generate transaction report to management, add additional trips and edit existing ones. Additionally, the system should also be able to generate reports, process payments, and provide customer support. Other requirements include the ability to handle multiple currencies, generate invoices, and provide integration with other systems.
 
-      2.2.2	Non-functional requirements 
+      2.1.2	Non-functional requirements 
 The non-functional requirements of a Railway Reservation System include security, scalability, reliability, maintainability, availability, and usability. Security requirements should ensure that information is securely stored and that customer data is protected from unauthorized access. Scalability requirements should ensure that the system is able to handle an increasing number of users and transactions. Reliability requirements should ensure that the system is able to handle large amounts of data and transactions without failure. Maintainability requirements should ensure that the system is easily maintainable and can be upgraded with minimal disruption. Availability requirements should ensure that the system is accessible to customers at all times. Finally, usability requirements should ensure that the system is easy to use for customers.
 
-    2.3	Requirements Structuring
-      2.3.1	Process modeling using DFD (describe your entire DFD, starting from Context Diagram all the way down to the Primitive DFD)
+    2.2	Requirements Structuring
+      2.2.1	Process modeling using DFD (describe your entire DFD, starting from Context Diagram all the way down to the Primitive DFD)
  ## Zero-Level diagram
 This is the Zero Level DFD of Railway Reservation System, where we have eloborated the high level process of Railway Reservation. It's a basic overview of the whole Railway Reservation System or process being analyzed or modeled. This diagram shows the interaction of the system with the customers, the adminstrators and payment service providers
 
@@ -178,9 +178,6 @@ Several integration tests are written for front-end parts of both systems. Unit 
 The client-side application will be published on different mobile application stores. The clients can then directly install the application on their phones.
 The other application will require a more careful attention. It’ll be installed by a person with the necessary knowledge. The system. will directly be installed for the first time. And, subsequent installations will be done in parallel to the previous system.
 
-## 5	[System support and maintenance] (The same approach is followed as in System Implementation)
-    5.1	System support
-    5.2	Maintenance
-## 6	Conclusion and Recommendation
+## 5	Conclusion and Recommendation
 
 Based on the analysis of the existing railway ticketing system, it can be concluded that the current system is inadequate and does not provide a smooth and efficient user experience. Therefore, it is recommended that the system be upgraded to provide a more efficient user experience.The system should be optimized for better performance and scalability, as well as ensuring security and data privacy. Finally, it is also recommended that a monitoring and backup system be implemented to ensure that the system is always running optimally.
