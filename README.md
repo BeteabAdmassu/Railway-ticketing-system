@@ -85,7 +85,7 @@ This is the Zero Level DFD of Railway Reservation System, where we have eloborat
   
   ![](img/Second-level.png)
   
-      2.3.2	Logic Modeling 
+      2.2.2	Logic Modeling 
 ```
 Receive trip order
 if trip is valid:
@@ -105,9 +105,9 @@ else
 	give the the message to the user
 ```
 
-      2.3.3	Conceptual Data Modeling using ER Model
-        2.3.3.1	Entity Types, Attributes and Relationships of the System
-        2.3.3.2	ER Diagram
+      2.2.3	Conceptual Data Modeling using ER Model
+        2.2.3.1	Entity Types, Attributes and Relationships of the System
+        2.2.3.2	ER Diagram
 The ER diagram of a railway ticketing system typically contains entities such as Admin, Trip and Transaction, among others. The entities are linked to one another through relationships such as one-to-one, one-to-many, and many-to-many. The one-to-one relationship is used to link a passenger to their login credentials, while the one-to-many relationship is used to link a passenger to their tickets. The many-to-many relationship is used to link different tickets to different trains. 
 
   ![](img/er_diagram.jpg)
@@ -157,8 +157,19 @@ CREATE TABLE TRANSACTION (
 ```
     3.2	Interface design
 When designing an interface for a railway ticketing system, it is important to create a user-friendly experience for customers. Design elements should make it easy for customers to search for trains, view availability, and book tickets. The interface should include elements such as a search bar, a list of available trains, and an easy-to-use booking form. Additionally, the interface should be visually appealing and adhere to the principles of good design. The interface should be easy to navigate, with clear labels and buttons, and provide helpful feedback to the user when necessary. Finally, the interface should be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms.
+
       3.2.1	Forms and reports Design
+      
+When designing forms and reports for a railway ticketing system, it is important to consider the user experience of customers. Forms should be easy to use and should provide helpful feedback to the user when necessary. Reports should be designed to be visually appealing, organized in a way that makes it easy to interpret the data, and should provide useful information to the users. Additionally, the forms and reports should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms.
+       
+       ![](img/1.png)
+       
+       ![](img/2.png)
+       
+       ![](img/2.png)
+       
       3.2.2	Dialogue Design
+When designing a dialogue system for a railway ticketing system, the goal should be to create a conversational experience that is natural and easy to use. The system should be able to understand user input, provide relevant and contextual information about the train journeys, and guide users through the booking process. The dialogue should be designed to be accessible and inclusive for all users, regardless of age, gender, language, or ability. Additionally, the dialogue should also be optimized for various devices, including mobile and desktop, to ensure a consistent user experience across platforms. Finally, it should also be designed to provide helpful feedback to the user when necessary, and provide an easy way for users to change or cancel their bookings
 
 
 ## 4	System implementation 
